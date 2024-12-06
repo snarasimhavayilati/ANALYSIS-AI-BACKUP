@@ -1,0 +1,176 @@
+.layout {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header {
+    background-color: #f2f2f2;
+    color: #222222;
+}
+
+.headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 12px;
+    margin-left: 12px;
+}
+
+.headerTitleContainer {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+    color: #222222;
+    text-decoration: none;
+}
+
+.headerLogo {
+    height: 40px;
+}
+
+.headerTitle {
+    margin-left: 12px;
+    font-weight: 600;
+}
+
+.headerNavList {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    justify-content: center;
+}
+
+.headerNavPageLink {
+    color: #222222;
+    text-decoration: none;
+    opacity: 0.75;
+
+    transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    transition-duration: 500ms;
+    transition-property: opacity;
+}
+
+.headerNavPageLink:hover {
+    opacity: 1;
+}
+
+.headerNavPageLinkActive {
+    color: #222222;
+    text-decoration: none;
+}
+
+.headerNavLeftMargin {
+    margin-left: 20px;
+}
+
+.headerRightText {
+    font-weight: normal;
+    margin-left: 40px;
+}
+
+.headerNav {
+    flex-grow: 1;
+}
+
+.headerRight {
+    display: flex;
+    align-items: center;
+}
+
+.microsoftLogo {
+    height: 23px;
+    font-weight: 600;
+}
+
+.githubLogo {
+    height: 20px;
+    fill: #222222;
+}
+
+.navButton {
+    font-size: 16px;
+    background-color: #063e56;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navButton:hover {
+    background-color: darkslategray;
+}
+footer {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.footerButton {
+    background-color: rgba(36, 189, 177, 255);
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-left: 10px;
+}
+
+.downloadButton {
+    color: rgba(36, 189, 177, 255) !important;
+    margin-left: 10px;
+}
+
+.downloadButton i {
+    font-size: 20px;
+}
+
+.footerButton:hover {
+    background-color: darkslategray;
+}
+
+.downloadButton:hover {
+    color: darkslategray !important;
+}
+
+@media (max-width: 1240px) {
+    .footer {
+        align-items: flex-end;
+    }
+
+    .footerButton,
+    .downloadButton {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    .headerContainer {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .headerNav {
+        margin: 10px 0;
+    }
+
+    .headerNavList {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .headerNavLeftMargin {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .headerRight {
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
